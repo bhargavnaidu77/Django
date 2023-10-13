@@ -1,0 +1,26 @@
+{%load static%}
+<html>
+<head>
+<title>
+index page</title>
+<link rel="stylesheet" media="screen" href="{%static 'css/index.css'%}">
+</head>
+<body>
+
+<h1>{{user}}</h1>
+<button id="logout-btn" type="button"><a href="/logout">logout</a></button>
+{%block content%}
+{%for i in name%}
+<div id="block">
+<h3> Title       : {{i.title}}</h3>
+<img src="{{i.img.url}}" width="200" height="200">
+<h3>Description : {{i.description}}</h3>
+<h3>Author      : {{i.author}}</h3>
+<h3>created time: {{i.created_at}}</h3>
+</div>
+{%endfor%}
+{%endblock%}
+</body>
+<script src="{%static 'js/index.js'%}"></script>
+
+</html>

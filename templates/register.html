@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Register page</title>
+<link rel="stylesheet" media="screen" href="{%static 'js/index.css'%}">
+</head>
+<body>
+<div id="lsf">
+<form id="Register" action="" method="post">{% csrf_token %}
+<h3>Register</h3>
+<input type="text" id="username" name="username" placeholder="enter name" required><br>
+<input type="email" id="email" name="email" placeholder="enter email"  required><br>
+<input type="password" id="password" name="password" placeholder="enter password"  required><br>
+<p style="color:red">{{error}}</p>
+<input id="submit" type="submit" value="login">
+<p>already have an account <a href="/">login</a></p>
+</form>
+</div>
+</body>
+</html>

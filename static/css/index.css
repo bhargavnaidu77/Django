@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(91, 105, 12);
+}
+#block{
+    border: 1px solid black;
+    margin: 1px 0px;
+ 
+}
+#logout-btn{
+    background-color: rgb(230, 19, 19);
+    border-radius: 10px;
+    border: none;
+    font-style: italic;
+    font-size: large;
+    float:right;
+    margin-top: 5px;
+    margin-right: 10px;
+    
+    
+    
+   
+}
+
+#logout-btn a{
+    color: aliceblue;
+    text-decoration: none;
+   
+}

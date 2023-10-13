@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>login page</title>
+<link rel="stylesheet" media="screen" href="{%static 'js/index.css'%}">
+</head>
+<body>
+<div id="lsf">
+<img src="media/s.jpg">
+<form id="login" action="" method="post">{% csrf_token %}
+<input type="text" id="useremail" name="username" placeholder="enter email" required><br>
+<input type="password" id="password" name="password" placeholder="enter password" required><br>
+
+<input id="submit" type="submit" value="login">
+</img>
+<p>create an account  <a href="register">Register</a></p>
+</form>
+</div>
+</body>
+</html>
